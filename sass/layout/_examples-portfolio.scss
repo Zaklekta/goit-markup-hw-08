@@ -1,0 +1,78 @@
+.examples__list {
+   @include centerFlex (flex);
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.examples__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--titles-color);
+
+    margin-bottom: 4px;
+}
+
+.examples__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+
+    color: var(--text-color);
+}
+
+.examples__container {
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 20px 24px;
+}
+
+.examples__link {
+    display: block;
+
+    transition: box-shadow var(--transition-general);
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.examples__overlay-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+
+    color: var(--white-color);
+}
+
+.examples__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.examples__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+
+    background: rgba(33, 150, 243, 0.9);
+    transition: transform var(--transition-general);
+
+    .examples__link:hover &,
+    .examples__link:focus & {
+        transform: translateY(0);
+    }
+}
+
+

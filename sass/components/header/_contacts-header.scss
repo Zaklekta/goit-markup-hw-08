@@ -1,0 +1,36 @@
+.contacts {
+    @include centerFlex(flex);
+    gap: 50px;
+}
+
+.contacts__link {
+    @include centerFlex(flex);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color);
+
+    transition: color var(--transition-general);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.contacts__icon {
+     margin-right: 10px;
+    fill: var(--text-color);
+    transition: fill var(--transition-general);
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+
+

@@ -1,0 +1,36 @@
+.filters__list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filters__btn {
+    padding: 6px 22px;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+   
+    border-color: transparent;
+    color: var(--titles-color);
+    background-color: var(--grey-background);
+
+    transition: background-color var(--transition-general), color var(--transition-general);
+
+    &:hover,
+    &:focus {
+        color: #ffffff;
+        background: var(--accent-color);
+    }
+}
+
+
+

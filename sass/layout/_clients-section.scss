@@ -1,0 +1,32 @@
+.clients__list {
+  @include centerFlex(flex);
+  gap: 30px;
+}
+
+.clients__link {
+  @include centerFlex(flex);
+  
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid var(--social-media-icons-color);
+  border-radius: 4px;
+
+  transition: border-color var(--transition-general);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.clients__icon {
+  fill: var(--social-media-icons-color);
+
+  transition: fill var(--transition-general);
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--accent-color);
+  }
+}

@@ -1,0 +1,14 @@
+.footer {
+    background-color: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__flex-box {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__leftside-box {
+    margin-right: 70px;
+}

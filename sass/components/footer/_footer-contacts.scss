@@ -1,0 +1,22 @@
+.footer-contacts {
+    font-style: normal;
+    margin-top: 20px;
+}
+.footer-contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.footer-contacts__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0.17;
+    letter-spacing: 0.03em;
+
+    color: var(--text-color);
+
+}
+
+.footer-contacts__link--white {
+    color: var(--white-color);
+}
