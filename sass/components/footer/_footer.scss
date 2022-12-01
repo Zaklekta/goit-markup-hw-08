@@ -1,14 +1,31 @@
 .footer {
-    background-color: var(--footer-background);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background-color: var(--footer-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
+.footer__tablet-box {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    align-items: baseline;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
 .footer__flex-box {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+  }
 }
 
 .footer__leftside-box {
+  @media screen and (min-width: $tablet) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: $desktop) {
     margin-right: 70px;
+  }
 }

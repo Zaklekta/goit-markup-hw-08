@@ -1,67 +1,87 @@
 .subscribe__form {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
+  }
 }
 
 .subscribe__text {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-    color: var(--white-color);
+  @media screen and (max-width: 1190px) {
+    text-align: center;
+  }
+
+  color: var(--white-color);
 }
 
 .subscribe__input {
-    appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 358px;
-    height: 50px;
-    padding-left: 16px;
+  }
 
-    color: var(--white-color);
-    background-color: var(--footer-background);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
+  color: var(--white-color);
+  background-color: var(--footer-background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 
-    &::placeholder {
+  &::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
     letter-spacing: 0.03em;
-    
+
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: $desktop) {
+      width: 358px;
     }
-    &:focus-visible {
+  }
+  &:focus-visible {
     outline: 1px solid var(--accent-color);
-    }
+  }
 }
 .subscribe__btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 28px;
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+  margin-left: auto;
+  margin-right: auto;
 
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 
-    &:hover,
-    &:focus {
-        background-color: var(--hero-btn-background);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--hero-btn-background);
+  }
 
-    &::after {
-        content: '';
-        width: 24px;
-        height: 24px;
-        margin-left: 10px;
-        background-image: url('../images/svg-icons/form-icons/icon-send.svg');
-        background-size: contain;
-        }
+  &::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url('../images/svg-icons/form-icons/icon-send.svg');
+    background-size: contain;
+  }
 }
-
-
-

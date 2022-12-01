@@ -19,11 +19,19 @@
   </head>
 
   <body>
-    <!-- 
     <header>
       <div class="container header">
         <div class="header__flex-box">
           <a href="./index.html" class="logo"> <span class="logo--first">Web</span>Studio</a>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="" width="40" height="40">
+              <use href="./images/icons.svg#menu_mob"></use>
+            </svg>
+          </button>
           <nav class="site-nav">
             <ul class="site-nav__list">
               <li>
@@ -54,16 +62,14 @@
         </div>
       </div>
     </header>
-    -->
     <main>
-      <!-- 
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="hero__btn btn" type="button">Замовити послугу</button>
         </div>
       </section>
-      -->
+
       <section class="benefits section">
         <div class="container">
           <h2 class="visually-hidden">Переваги</h2>
@@ -115,7 +121,7 @@
           </ul>
         </div>
       </section>
-      <!-- 
+
       <section class="doing section">
         <div class="container">
           <h2 class="doing__title">Чим ми займаємося</h2>
@@ -150,18 +156,68 @@
           </ul>
         </div>
       </section>
+
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__member-photo"
-                src="./images/ihor-product-designer.jpg"
-                alt="Ігор Дем'яненко дезайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Team/WebP/team-member1_desk@1x.webp 1x,
+                    ./images/Team/WebP/team-member1_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Team/processed/team-member1_desk@1x.jpg 1x,
+                    ./images/Team/processed/team-member1_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Team/WebP/team-member1_tab@1x.webp 1x,
+                    ./images/Team/WebP/team-member1_tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Team/processed/team-member1_tab@1x.jpg 1x,
+                    ./images/Team/processed/team-member1_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/Team/WebP/team-member1_mob@1x.webp 1x,
+                    ./images/Team/WebP/team-member1_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/Team/processed/team-member1_mob@1x.jpg 1x,
+                    ./images/Team/processed/team-member1_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__member-photo"
+                  src="./images/Team/processed/team-member1_mob@1x.jpg"
+                  alt="Ігор Дем'яненко дезайнер"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__member-container">
                 <h3 class="team__member-title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__member-position">Product Designer</p>
@@ -222,13 +278,62 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__member-photo"
-                src="./images/olga-frontend-developer.jpg"
-                alt="Ольга Рєпіна фронтенд розробник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Team/WebP/team-member2_desk@1x.webp 1x,
+                    ./images/Team/WebP/team-member2_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Team/processed/team-member2_desk@1x.jpg 1x,
+                    ./images/Team/processed/team-member2_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Team/WebP/team-member2_tab@1x.webp 1x,
+                    ./images/Team/WebP/team-member2_tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Team/processed/team-member2_tab@1x.jpg 1x,
+                    ./images/Team/processed/team-member2_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/Team/WebP/team-member2_mob@1x.webp 1x,
+                    ./images/Team/WebP/team-member2_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/Team/processed/team-member2_mob@1x.jpg 1x,
+                    ./images/Team/processed/team-member2_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__member-photo"
+                  src="./images/Team/processed/team-member2_mob@1x.jpg"
+                  alt="Ольга Рєпіна фронтенд розробник"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__member-container">
                 <h3 class="team__member-title">Ольга Рєпіна</h3>
                 <p lang="en" class="team__member-position">Frontend Developer</p>
@@ -289,13 +394,62 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__member-photo"
-                src="./images/mykola-marketing.jpg"
-                alt="Микола Тарасов маркетолог"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Team/WebP/team-member3_desk@1x.webp 1x,
+                    ./images/Team/WebP/team-member3_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Team/processed/team-member3_desk@1x.jpg 1x,
+                    ./images/Team/processed/team-member3_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Team/WebP/team-member3_tab@1x.webp 1x,
+                    ./images/Team/WebP/team-member3_tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Team/processed/team-member3_tab@1x.jpg 1x,
+                    ./images/Team/processed/team-member3_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/Team/WebP/team-member3_mob@1x.webp 1x,
+                    ./images/Team/WebP/team-member3_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/Team/processed/team-member3_mob@1x.jpg 1x,
+                    ./images/Team/processed/team-member3_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__member-photo"
+                  src="./images/Team/processed/team-member3_mob@1x.jpg"
+                  alt="Микола Тарасов маркетолог"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__member-container">
                 <h3 class="team__member-title">Микола Тарасов</h3>
                 <p lang="en" class="team__member-position">Marketing</p>
@@ -356,13 +510,62 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__member-photo"
-                src="./images/mykhailo-ui-designer.jpg"
-                alt="Михайло Єрмаков UI дезайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Team/WebP/team-member4_desk@1x.webp 1x,
+                    ./images/Team/WebP/team-member4_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/Team/processed/team-member4_desk@1x.jpg 1x,
+                    ./images/Team/processed/team-member4_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Team/WebP/team-member4_tab@1x.webp 1x,
+                    ./images/Team/WebP/team-member4_tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/Team/processed/team-member4_tab@1x.jpg 1x,
+                    ./images/Team/processed/team-member4_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/Team/WebP/team-member4_mob@1x.webp 1x,
+                    ./images/Team/WebP/team-member4_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/Team/processed/team-member4_mob@1x.jpg 1x,
+                    ./images/Team/processed/team-member4_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__member-photo"
+                  src="./images/Team/processed/team-member4_mob@1x.jpg"
+                  alt="Михайло Єрмаков UI дезайнер"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__member-container">
                 <h3 class="team__member-title">Михайло Єрмаков</h3>
                 <p lang="en" class="team__member-position">UI Designer</p>
@@ -473,88 +676,90 @@
     </main>
     <footer class="footer">
       <div class="container footer__flex-box">
-        <div class="footer__leftside-box">
-          <a href="./index.html" class="logo">
-            <span class="logo--first">Web</span><span class="logo--second">Studio</span></a
-          >
-          <address class="footer-contacts">
-            <ul class="footer-contacts__list">
-              <li class="footer-contacts__item">
+        <div class="footer__tablet-box">
+          <div class="footer__leftside-box">
+            <a href="./index.html" class="logo logo__mob-footer">
+              <span class="logo--first">Web</span><span class="logo--second">Studio</span></a
+            >
+            <address class="footer-contacts">
+              <ul class="footer-contacts__list">
+                <li class="footer-contacts__item">
+                  <a
+                    class="footer-contacts__link footer-contacts__link--white"
+                    href="https://goo.gl/maps/1CzjTYLkiQzth85n8"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="footer-contacts__item">
+                  <a href="mailto:info@devstudio.com" class="footer-contacts__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a href="tel:+380961111111" class="footer-contacts__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="join__text">приєднуйтесь</p>
+            <ul class="join__social-media-list">
+              <li class="join__social-media-item">
                 <a
-                  class="footer-contacts__link footer-contacts__link--white"
-                  href="https://goo.gl/maps/1CzjTYLkiQzth85n8"
+                  class="join__social-media-link"
+                  href=""
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <svg class="join__social-media-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer-contacts__item">
-                <a href="mailto:info@devstudio.com" class="footer-contacts__link"
-                  >info@devstudio.com</a
+              <li class="join__social-media-item">
+                <a
+                  class="join__social-media-link"
+                  href=""
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Twitter"
                 >
+                  <svg class="join__social-media-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-contacts__item">
-                <a href="tel:+380961111111" class="footer-contacts__link">+38 096 111 11 11</a>
+              <li class="join__social-media-item">
+                <a
+                  class="join__social-media-link"
+                  href=""
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <svg class="join__social-media-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__social-media-item">
+                <a
+                  class="join__social-media-link"
+                  href=""
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Linkedin"
+                >
+                  <svg class="join__social-media-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <p class="join__text">приєднуйтесь</p>
-          <ul class="join__social-media-list">
-            <li class="join__social-media-item">
-              <a
-                class="join__social-media-link"
-                href=""
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Instagram"
-              >
-                <svg class="join__social-media-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__social-media-item">
-              <a
-                class="join__social-media-link"
-                href=""
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Twitter"
-              >
-                <svg class="join__social-media-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__social-media-item">
-              <a
-                class="join__social-media-link"
-                href=""
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Facebook"
-              >
-                <svg class="join__social-media-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__social-media-item">
-              <a
-                class="join__social-media-link"
-                href=""
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                aria-label="Linkedin"
-              >
-                <svg class="join__social-media-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe__box">
           <p class="subscribe__text">Підпишіться на розсилку</p>
@@ -567,9 +772,51 @@
         </div>
       </div>
     </footer>
-     -->
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="" width="40" height="40">
+          <use href="./images/icons.svg#close_mob"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile-menu__contacts-list">
+        <li class="mobile-menu__tel-item">
+          <a href="tel:+380961111111" class="mobile-menu__tel-link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-menu__mail-item">
+          <a href="mailto:info@devstudio.com" target="_blank" class="mobile-menu__mail-link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__media-list">
+        <li class="mobile-menu__media-item">
+          <a class="mobile-menu_media-link" href="">Instagram</a>
+        </li>
+        <li class="mobile-menu__media-item">
+          <a class="mobile-menu_media-link" href="">Twitter</a>
+        </li>
+        <li class="mobile-menu__media-item">
+          <a class="mobile-menu_media-link" href="">Facebook</a>
+        </li>
+        <li class="mobile-menu__media-item">
+          <a class="mobile-menu_media-link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <!-- modal form -->
-    <!--
+
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="modal__close-btn" type="button">
@@ -621,7 +868,14 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-     -->
+    -->
   </body>
 </html>

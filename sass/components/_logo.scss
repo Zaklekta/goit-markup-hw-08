@@ -1,18 +1,25 @@
 .logo {
-    display: block;
-    
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+  display: block;
 
-    color: var(--black-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--black-color);
 }
 
 .logo--first {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 .logo--second {
-    color: var(--white-color);
+  color: var(--white-color);
+}
+.logo__mob-footer {
+  margin-bottom: 28px;
+
+  @media screen and (max-width: 1190px) {
+    text-align: center;
+  }
 }
