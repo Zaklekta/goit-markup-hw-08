@@ -171,11 +171,6 @@ body {
   -webkit-transition: color var(--transition-general);
   transition: color var(--transition-general);
 }
-@media screen and (max-width: 1199px) {
-  .site-nav__link {
-    padding-bottom: 36px;
-  }
-}
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
@@ -196,14 +191,24 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 @media screen and (max-width: 767px) {
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -471,11 +476,6 @@ body {
     width: 450px;
   }
 }
-@media screen and (max-width: 767px) {
-  .benefits__item {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .benefits__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -486,6 +486,12 @@ body {
   .benefits__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -597,7 +603,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 @media screen and (max-width: 767px) {
-  .team__item {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -765,6 +771,11 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__tablet-box {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__tablet-box {
     display: -webkit-box;
@@ -796,6 +807,11 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__leftside-box {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__leftside-box {
     margin-right: 165px;
@@ -810,12 +826,6 @@ body {
 .footer-contacts {
   font-style: normal;
   margin-top: 20px;
-}
-
-@media screen and (max-width: 767px) {
-  .footer-contacts__list {
-    margin-bottom: 60px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -868,11 +878,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-}
-@media screen and (max-width: 767px) {
-  .join__social-media-list {
-    margin-bottom: 60px;
-  }
 }
 
 .join__social-media-link {
