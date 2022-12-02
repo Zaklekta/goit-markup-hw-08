@@ -1,17 +1,27 @@
 .contacts {
-  display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  @media screen and (min-width: $desktop) {
     @include centerFlex(flex);
+    flex-direction: row;
     gap: 50px;
   }
 }
 
 .contacts__link {
-  @include centerFlex(flex);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.02em;
 
   color: var(--text-color);
@@ -21,6 +31,11 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
   }
 }
 

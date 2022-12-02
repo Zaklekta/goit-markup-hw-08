@@ -128,30 +128,67 @@
           <ul class="doing__list">
             <li class="doing__item">
               <h3 class="doing__subtitle">Десктопні додатки</h3>
-              <img
-                src="./images/design-workflow-1.jpg"
-                alt="Робочий процес дизайну на комп'ютері"
-                width="370"
-                height="294"
-              />
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/Doing/webp/doing1@1x.webp 1x,
+                    ./images/Doing/webp/doing1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Doing/jpg/doing1@1x.jpg 1x, ./images/Doing/jpg/doing1@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/Doing/jpg/doing1@1x.jpg"
+                  alt="Робочий процес дизайну на комп'ютері"
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="doing__item">
               <h3 class="doing__subtitle">Мобільні додатки</h3>
-              <img
-                src="./images/design-workflow-2.jpg"
-                alt="Робочий процес дизайну на комп'ютері та телефоні"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Doing/webp/doing2@1x.webp 1x,
+                    ./images/Doing/webp/doing2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Doing/jpg/doing2@1x.jpg 1x, ./images/Doing/jpg/doing2@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/Doing/jpg/doing2@1x.jpg"
+                  alt="Робочий процес дизайну на комп'ютері та телефоні"
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="doing__item">
               <h3 class="doing__subtitle">Дизайнерські рішення</h3>
-              <img
-                src="./images/design-workflow-3.jpg"
-                alt="Робочий процес дизайну на планшеті"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Doing/webp/doing3@1x.webp 1x,
+                    ./images/Doing/webp/doing3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Doing/jpg/doing3@1x.jpg 1x, ./images/Doing/jpg/doing3@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/Doing/jpg/doing3@1x.jpg"
+                  alt="Робочий процес дизайну на планшеті"
+                  loading="lazy"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -779,41 +816,44 @@
           <use href="./images/icons.svg#close_mob"></use>
         </svg>
       </button>
+      <div class="mobile-menu__flex-box">
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link mobile-menu__link--current">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+        </ul>
+        <div>
+          <ul class="mobile-menu__contacts-list">
+            <li class="mobile-menu__tel-item">
+              <a href="tel:+380961111111" class="mobile-menu__tel-link">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__mail-item">
+              <a href="mailto:info@devstudio.com" target="_blank" class="mobile-menu__mail-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
 
-      <ul class="mobile-menu">
-        <li class="mobile-menu__item">
-          <a href="" class="mobile-menu__link mobile-menu__link--current">Студія</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
-        </li>
-        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
-      </ul>
-
-      <ul class="mobile-menu__contacts-list">
-        <li class="mobile-menu__tel-item">
-          <a href="tel:+380961111111" class="mobile-menu__tel-link">+38 096 111 11 11</a>
-        </li>
-        <li class="mobile-menu__mail-item">
-          <a href="mailto:info@devstudio.com" target="_blank" class="mobile-menu__mail-link"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-menu__media-list">
-        <li class="mobile-menu__media-item">
-          <a class="mobile-menu_media-link" href="">Instagram</a>
-        </li>
-        <li class="mobile-menu__media-item">
-          <a class="mobile-menu_media-link" href="">Twitter</a>
-        </li>
-        <li class="mobile-menu__media-item">
-          <a class="mobile-menu_media-link" href="">Facebook</a>
-        </li>
-        <li class="mobile-menu__media-item">
-          <a class="mobile-menu_media-link" href="">LinkedIn</a>
-        </li>
-      </ul>
+          <ul class="mobile-menu__media-list">
+            <li class="mobile-menu__media-item">
+              <a class="mobile-menu_media-link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu__media-item">
+              <a class="mobile-menu_media-link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__media-item">
+              <a class="mobile-menu_media-link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__media-item">
+              <a class="mobile-menu_media-link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- modal form -->
 

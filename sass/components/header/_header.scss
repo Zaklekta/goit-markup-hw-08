@@ -1,8 +1,14 @@
 .header {
-  width: 100%;
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
 }
 
 .header__flex-box {

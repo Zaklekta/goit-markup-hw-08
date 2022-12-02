@@ -28,6 +28,12 @@
   margin: 0;
   list-style: none;
 }
+.mobile-menu__flex-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .mobile-menu__link {
   display: block;
@@ -49,10 +55,7 @@
   margin-bottom: 32px;
 }
 .mobile-menu__media-list {
-  margin-bottom: 0;
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
@@ -61,7 +64,7 @@
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-.mobile-menu__media-list .mobile-menu_media-link {
+.mobile-menu_media-link {
   font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);
@@ -71,6 +74,7 @@
 }
 
 .mobile-menu__tel-item {
+  margin-bottom: 32px;
   margin-top: auto;
 }
 .mobile-menu__tel-link {
